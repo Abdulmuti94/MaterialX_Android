@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:gravity="center"
+            android:text="Subject Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/grey_80" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/contacts"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/spacing_large"
+            app:srcCompat="@drawable/ic_star_border"
+            app:tint="@color/grey_40" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/spacing_large">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/photo_female_8"
+            app:civ_border_color="@color/overlay_dark_10"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_smlarge"
+            android:layout_marginRight="@dimen/spacing_smlarge"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Person name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/brief"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="brief"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_60" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/spacing_smlarge"
+        android:layout_marginBottom="@dimen/spacing_smlarge"
+        android:background="@color/transparent"
+        android:gravity="top"
+        android:text="@string/long_lorem_ipsum"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/grey_80" />
+
+</LinearLayout>

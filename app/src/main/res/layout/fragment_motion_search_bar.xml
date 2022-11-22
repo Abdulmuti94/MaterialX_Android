@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_b_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_menu"
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/grey_40"
+                app:srcCompat="@drawable/ic_arrow_back" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Search"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80" />
+
+            <ImageButton
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/grey_40"
+                app:srcCompat="@drawable/ic_mic" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#0000"
+                android:scrollbars="none"
+                android:scrollingCache="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

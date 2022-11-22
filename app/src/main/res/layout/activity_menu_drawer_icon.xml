@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <!--navigation drawer menu-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        app:elevation="12dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacing_large">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    app:cardBackgroundColor="@color/blue_400"
+                    app:cardCornerRadius="8dp"
+                    app:elevation="0dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/spacing_medium"
+                        app:srcCompat="@drawable/ic_account_circle_outline"
+                        app:tint="@android:color/white" />
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xlarge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_margin="@dimen/spacing_middle"
+                        app:srcCompat="@drawable/ic_dns_outline"
+                        app:tint="@color/blue_grey_500" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/spacing_xlarge"
+                        android:layout_height="@dimen/spacing_xlarge">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="@dimen/spacing_mxlarge"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_notifications_outline"
+                            app:tint="@color/blue_grey_500" />
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/spacing_smlarge"
+                            android:layout_height="@dimen/spacing_smlarge"
+                            android:layout_alignParentEnd="true">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/shape_circle"
+                                app:tint="@color/deep_orange_600" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text="20"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp"
+                                app:fontFamily="sans-serif-medium" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_margin="@dimen/spacing_middle"
+                        app:srcCompat="@drawable/ic_people_outline"
+                        app:tint="@color/blue_grey_500" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_margin="@dimen/spacing_middle"
+                        app:srcCompat="@drawable/ic_apps"
+                        app:tint="@color/blue_grey_500" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/spacing_middle"
+                    android:background="@color/blue_grey_50"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/spacing_xlarge"
+                        android:layout_height="@dimen/spacing_xlarge">
+
+                        <ImageView
+                            android:layout_width="@dimen/spacing_mxlarge"
+                            android:layout_height="@dimen/spacing_mxlarge"
+                            android:layout_centerInParent="true"
+                            app:srcCompat="@drawable/ic_inbox"
+                            app:tint="@color/blue_grey_500" />
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="@dimen/spacing_small"
+                            app:srcCompat="@drawable/shape_circle"
+                            app:tint="@color/deep_orange_600" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_margin="@dimen/spacing_middle"
+                        app:srcCompat="@drawable/ic_people_outline"
+                        app:tint="@color/blue_grey_500" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onMenuClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="@dimen/spacing_mxlarge"
+                        android:layout_margin="@dimen/spacing_middle"
+                        app:srcCompat="@drawable/ic_settings_outline"
+                        app:tint="@color/blue_grey_500" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--toolbar and header  -->
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- dummy content list of new -->
+        <include layout="@layout/include_drawer_content" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

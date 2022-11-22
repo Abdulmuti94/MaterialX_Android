@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="Basic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <RadioGroup
+                    android:id="@+id/group_basic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_basic_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:id="@+id/rb_basic_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Disable" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:padding="@dimen/spacing_middle"
+                        android:text="Switch" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="Material RadioButton"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Disable" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Switch Off"
+                            app:switchPadding="@dimen/spacing_large"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Accent"
+                            app:switchPadding="@dimen/spacing_large" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Switch On"
+                            app:switchPadding="@dimen/spacing_large"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.switchmaterial.SwitchMaterial
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Disabled"
+                            app:switchPadding="@dimen/spacing_large" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="AppCompat RadioButton"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Disable" />
+
+                    <androidx.appcompat.widget.AppCompatRadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:paddingVertical="@dimen/spacing_middle"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Switch Off"
+                            app:switchPadding="@dimen/spacing_large"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Accent"
+                            app:switchPadding="@dimen/spacing_large" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Switch On"
+                            app:switchPadding="@dimen/spacing_large"
+                            app:thumbTint="@color/switch_color_primary" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:padding="@dimen/spacing_middle"
+                            android:text="Disabled"
+                            app:switchPadding="@dimen/spacing_large" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_email"
+        android:icon="@drawable/ic_email"
+        android:orderInCategory="100"
+        android:title="Email"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/yellow_600"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/yellow_600"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACKDROP"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/grey_100_"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/product_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTENT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/grey_60"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Click menu icon above to show backdrop"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_40" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/spacing_xmlarge"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/lyt_parent"
+        style="@style/RippleStyleWhite"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/item_menu_sub_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_10"
+                tools:text="Person Name" />
+
+            <View
+                android:layout_width="@dimen/spacing_large"
+                android:layout_height="0dp" />
+
+            <ImageView
+                android:id="@+id/item_menu_sub_group_badge"
+                android:layout_width="@dimen/spacing_xmedium"
+                android:layout_height="@dimen/spacing_xmedium"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/colorAccentDark"
+                app:srcCompat="@drawable/shape_circle" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <ImageView
+        android:id="@+id/favorite"
+        android:layout_width="@dimen/spacing_xmlarge"
+        android:layout_height="@dimen/spacing_xmlarge"
+        android:layout_gravity="center_vertical"
+        android:background="?attr/selectableItemBackground"
+        android:padding="@dimen/spacing_middle"
+        android:clickable="true"
+        android:tint="@color/grey_60"
+        app:srcCompat="@drawable/ic_favorite_border" />
+
+    <View
+        android:layout_width="@dimen/spacing_middle"
+        android:layout_height="0dp" />
+
+</LinearLayout>

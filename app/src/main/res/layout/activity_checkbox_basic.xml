@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_mlarge"
+                android:text="Basic"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Disable" />
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="@dimen/spacing_medium">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_basic_ind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_indeterminate_check_box"
+                        android:paddingHorizontal="@dimen/spacing_middle"
+                        android:text="Indeterminate"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="Material CheckBox"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Disable" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="@dimen/spacing_medium">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_material_ind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_indeterminate_check_box"
+                        android:paddingHorizontal="@dimen/spacing_middle"
+                        android:text="Indeterminate"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:text="AppCompat CheckBox"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_small"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Unchecked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Checked"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Disable" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_medium"
+                        android:text="Accent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="@dimen/spacing_medium">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/checkbox_compat_ind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/ic_indeterminate_check_box"
+                        android:paddingHorizontal="@dimen/spacing_middle"
+                        android:text="Indeterminate"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_90"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spacing_middle">
+
+        <ImageView
+            android:layout_width="@dimen/spacing_xmlarge"
+            android:layout_height="@dimen/spacing_xmlarge"
+            android:layout_margin="@dimen/spacing_medium"
+            app:srcCompat="@drawable/ic_account_circle_outline"
+            app:tint="@color/amber_400" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_margin="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_dns_outline"
+                app:tint="@color/blue_grey_100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/spacing_xlarge"
+                android:layout_height="@dimen/spacing_xlarge">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_notifications_outline"
+                    app:tint="@color/blue_grey_100" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/spacing_smlarge"
+                    android:layout_height="@dimen/spacing_smlarge"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/shape_circle"
+                        app:tint="@color/amber_400" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="20"
+                        android:textColor="@android:color/black"
+                        android:textSize="10sp"
+                        app:fontFamily="sans-serif-medium" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_margin="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_people_outline"
+                app:tint="@color/blue_grey_100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_margin="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_apps"
+                app:tint="@color/blue_grey_100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/spacing_xlarge"
+                android:layout_height="@dimen/spacing_xlarge">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_inbox"
+                    app:tint="@color/blue_grey_100" />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/spacing_small"
+                    app:srcCompat="@drawable/shape_circle"
+                    app:tint="@color/amber_400" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_margin="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_people_outline"
+                app:tint="@color/blue_grey_100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_middle"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_margin="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_settings_outline"
+                app:tint="@color/blue_grey_100" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationX="100dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="false">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <!--toolbar and header  -->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/white"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/Toolbar.Light"
+                    app:titleTextColor="@color/blue_700" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!-- dummy content list of new -->
+            <include layout="@layout/include_drawer_content" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

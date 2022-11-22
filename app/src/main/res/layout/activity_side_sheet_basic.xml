@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="end">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:theme="@style/AppTheme.Material">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_3"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!--navigation drawer menu-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="false">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/sheet_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:text="Label"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Events"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Personal"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Project"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Reminder"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Work"
+                        app:buttonTint="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:text="Format"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/menu"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xxlarge"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:hint="All"
+                    app:boxCornerRadiusTopEnd="4dp"
+                    app:boxCornerRadiusTopStart="4dp"
+                    app:hintTextColor="@color/grey_80">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_smlarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:text="Range"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/seekbar_primary_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_xmedium"
+                    android:max="100"
+                    android:progress="40"
+                    android:thumb="@drawable/seek_thumb_primary" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mlarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:text="Order By"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_60" />
+
+                <RadioGroup
+                    android:id="@+id/group_order_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="12dp">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Date created"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Last opened"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Last modified"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Owner"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:text="Name"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mlarge" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.Material">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_mlarge"
+                android:visibility="visible"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="2dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_30"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/lyt_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:orientation="vertical"
+                        app:layout_constraintTop_toBottomOf="@id/image">
+
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/spacing_large"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Welcome back to office"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                            android:textColor="@color/grey_90"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/spacing_large"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:text="Monday, 12:30 PM, Mostly Sunny"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                        android:textColor="@color/grey_40"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/lyt_item" />
+
+                    <LinearLayout
+                        android:id="@+id/weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/spacing_large"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/description">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/ic_wb_sunny"
+                            app:tint="@color/yellow_600" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="81 &#x2109;"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:textColor="@color/grey_60" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=" / 26 &#x2103;"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                            android:textColor="@color/grey_40" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/spacing_large"
+                        android:background="@color/grey_10"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/weather" />
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:clipToPadding="false"
+                        android:paddingHorizontal="@dimen/spacing_large"
+                        android:scrollbars="none"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:id="@+id/type_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:singleLine="true">
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xxxlarge"
+                                android:checkable="false"
+                                android:onClick="onChipClick"
+                                android:text="Turn on lights"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60"
+                                app:chipEndPadding="@dimen/spacing_middle"
+                                app:chipIcon="@drawable/ic_lightbulb"
+                                app:chipIconEnabled="true"
+                                app:chipIconTint="@color/grey_40"
+                                app:chipStartPadding="@dimen/spacing_middle" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xxxlarge"
+                                android:checkable="false"
+                                android:onClick="onChipClick"
+                                android:text="Set alarm"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60"
+                                app:chipEndPadding="@dimen/spacing_middle"
+                                app:chipIcon="@drawable/ic_alarm"
+                                app:chipIconEnabled="true"
+                                app:chipIconTint="@color/grey_40"
+                                app:chipStartPadding="@dimen/spacing_middle" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xxxlarge"
+                                android:checkable="false"
+                                android:onClick="onChipClick"
+                                android:text="Clear Task"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60"
+                                app:chipEndPadding="@dimen/spacing_middle"
+                                app:chipIcon="@drawable/ic_stack_menu"
+                                app:chipIconEnabled="true"
+                                app:chipIconTint="@color/grey_40"
+                                app:chipStartPadding="@dimen/spacing_middle" />
+
+                            <com.google.android.material.chip.Chip
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/spacing_xxxlarge"
+                                android:checkable="false"
+                                android:onClick="onChipClick"
+                                android:text="Edit Reminder"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                android:textColor="@color/grey_60"
+                                app:chipEndPadding="@dimen/spacing_middle"
+                                app:chipIcon="@drawable/ic_create"
+                                app:chipIconEnabled="true"
+                                app:chipIconTint="@color/grey_40"
+                                app:chipStartPadding="@dimen/spacing_middle" />
+
+                        </com.google.android.material.chip.ChipGroup>
+
+                    </HorizontalScrollView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

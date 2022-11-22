@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple_A700"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                android:text="Filter result"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white"
+                app:fontFamily="sans-serif-medium" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/action_menu"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_tune"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/spacing_large"
+                    android:paddingTop="@dimen/spacing_medium"
+                    android:paddingBottom="@dimen/spacing_large">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Smart TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Dresses"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="4K Ultra HD TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Curved Tv"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="OLED TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="LED TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Home Theater TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Android TV"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                    android:background="@color/overlay_light_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Screen Size"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RadioGroup
+                    android:id="@+id/group_screen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/spacing_large"
+                    android:paddingVertical="@dimen/spacing_large">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/screen_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="TVs under 32 inch"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/screen_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="TVs up to 32 inch"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/screen_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="TVs up to 39-50 inch"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/screen_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="TVs up to 55 inch or larger"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                    android:background="@color/overlay_light_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Order by"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white"
+                    app:fontFamily="sans-serif-medium" />
+
+                <RadioGroup
+                    android:id="@+id/group_order_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/spacing_large"
+                    android:paddingVertical="@dimen/spacing_large">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Popular"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="New Arrival"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/order_by_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Featured"
+                        android:textColor="@android:color/white"
+                        app:buttonTint="@android:color/white" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingVertical="@dimen/spacing_middle"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

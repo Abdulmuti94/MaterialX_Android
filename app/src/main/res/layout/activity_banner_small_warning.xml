@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_collapseMode="pin">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_600"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_medium"
+                android:paddingVertical="@dimen/spacing_small">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ops, you are offline."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    style="@style/Button.Primary.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onBannerActionClicked"
+                    android:text="@string/SETTING"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Click button below to show or hide banner"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/grey_40" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:gravity="center"
+                    android:onClick="onBannerActionClicked"
+                    android:text="SHOW / HIDE"
+                    android:textColor="@color/red_600"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

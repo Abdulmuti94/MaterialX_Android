@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple_A700"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/deep_purple_A700"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabMinWidth="90dp"
+            app:tabMode="auto"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/overlay_light_60">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOOK" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REVIEW" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIMES" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/overlay_light_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_large"
+            android:paddingVertical="@dimen/spacing_smlarge">
+
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="@dimen/spacing_middle"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="Royal Hotel"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:orientation="horizontal">
+
+                <EditText
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_overlay_white"
+                    android:drawableStart="@drawable/ic_peoples"
+                    android:drawableEnd="@drawable/ic_arrow_drop"
+                    android:drawablePadding="@dimen/spacing_middle"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:text="2 guest"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp" />
+
+                <EditText
+                    style="@style/EditText.Flat.Grey"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_round_bg_overlay_white"
+                    android:drawableStart="@drawable/ic_meeting_room"
+                    android:drawableEnd="@drawable/ic_arrow_drop"
+                    android:drawablePadding="@dimen/spacing_middle"
+                    android:minHeight="@dimen/spacing_xmlarge"
+                    android:paddingLeft="@dimen/spacing_middle"
+                    android:paddingRight="@dimen/spacing_middle"
+                    android:text="1 room"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <EditText
+                style="@style/EditText.Flat.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/edit_text_round_bg_overlay_white"
+                android:drawableStart="@drawable/ic_event"
+                android:drawablePadding="@dimen/spacing_middle"
+                android:minHeight="@dimen/spacing_xmlarge"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="Today, 10/07/18"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:paddingVertical="@dimen/spacing_smlarge"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

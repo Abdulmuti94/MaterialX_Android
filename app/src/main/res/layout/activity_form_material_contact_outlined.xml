@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.Material">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_smlarge"
+            android:paddingVertical="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    app:srcCompat="@drawable/ic_person"
+                    app:tint="@color/grey_40" />
+
+                <View
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    app:srcCompat="@drawable/ic_phone"
+                    app:tint="@color/grey_40" />
+
+                <View
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:hint="Phone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Area">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/dropdown_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_location"
+                    app:tint="@color/grey_40" />
+
+                <View
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="City">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_xxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="State">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/dropdown_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Zip">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    app:srcCompat="@drawable/ic_email"
+                    app:tint="@color/grey_40" />
+
+                <View
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mxlarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    app:srcCompat="@drawable/ic_cake"
+                    app:tint="@color/grey_40" />
+
+                <View
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="0dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Birthday"
+                    app:endIconDrawable="@drawable/ic_event"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/grey_40">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+
+

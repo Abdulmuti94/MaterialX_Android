@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple_A700"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_smlarge"
+                android:text="Selection control"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/action_menu"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_tune"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_large"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingBottom="@dimen/spacing_large">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Shoes"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:checked="true"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Dresses"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Shirt"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Accessories"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_smlarge"
+            android:background="@color/overlay_light_20" />
+
+        <RadioGroup
+            android:id="@+id/group_order_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_large"
+            android:paddingVertical="@dimen/spacing_large">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/order_by_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Popular"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/order_by_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:checked="true"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="New Arrival"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/order_by_3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:paddingHorizontal="@dimen/spacing_mlarge"
+                android:text="Featured"
+                android:textColor="@android:color/white"
+                app:buttonTint="@android:color/white" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingBottom="@dimen/spacing_xxlarge"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="@dimen/spacing_mlarge"
+                        android:layout_marginRight="@dimen/spacing_mlarge"
+                        android:src="@drawable/shape_circle"
+                        app:tint="@color/grey_20" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="70dp"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:background="@color/grey_20" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:background="@color/grey_20" />
+
+                        <View
+                            android:layout_width="40dp"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:background="@color/grey_20" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="@dimen/spacing_mlarge"
+                        android:layout_marginRight="@dimen/spacing_xlarge"
+                        android:src="@drawable/shape_circle"
+                        app:tint="@color/grey_10" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:background="@color/grey_10" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:background="@color/grey_10" />
+
+                        <View
+                            android:layout_width="40dp"
+                            android:layout_height="@dimen/spacing_middle"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:background="@color/grey_10" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:text="Opps, search item not found"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/grey_40" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

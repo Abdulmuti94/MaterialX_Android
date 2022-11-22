@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+
+        <FrameLayout
+            android:id="@+id/scrim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/spacing_medium"
+            app:behavior_hideable="true"
+            app:itemIconTint="@color/grey_60"
+            app:itemTextColor="@color/grey_90"
+            app:layout_behavior="@string/bottom_sheet_behavior"
+            app:headerLayout="@layout/include_header_navigation_mail"
+            app:menu="@menu/menu_navigation_mail_simple">
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        style="@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:navigationIcon="@drawable/ic_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

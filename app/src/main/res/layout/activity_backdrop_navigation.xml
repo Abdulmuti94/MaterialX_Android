@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple_A700"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/deep_purple_A700"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light"
+                app:titleTextColor="@android:color/white" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/backdrop_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_middle">
+
+            <LinearLayout
+                android:id="@+id/lyt_unread"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:background="@drawable/btn_white_overlay_backdrop"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_email"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:text="Unread"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_inbox"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:background="@drawable/btn_white_overlay_backdrop"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_inbox"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:text="Inbox"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:background="@drawable/btn_white_overlay_backdrop"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_bookmark"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:text="Bookmark"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_social"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginHorizontal="@dimen/spacing_small"
+                android:background="@drawable/btn_white_overlay_backdrop"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/spacing_small">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_person"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                    android:text="Social"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_3"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

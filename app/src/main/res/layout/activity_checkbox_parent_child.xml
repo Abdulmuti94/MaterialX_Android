@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_medium"
+                android:paddingVertical="@dimen/spacing_mxlarge">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="0dp" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_add"
+                        android:layout_width="0dp"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_weight="1"
+                        android:button="@drawable/ic_indeterminate_check_box"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:text="Additions"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <ImageButton
+                        android:id="@+id/bt_toggle"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/colorPrimary"
+                        app:srcCompat="@drawable/ic_expand_arrow" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lyt_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/spacing_xlarge"
+                    android:paddingVertical="@dimen/spacing_medium">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Pickles"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Tomato"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Lettuce"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Sauce"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Mayonnaise"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/checkbox_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/spacing_mlarge"
+                        android:paddingVertical="@dimen/spacing_large"
+                        android:text="Cheese"
+                        app:buttonTint="@color/colorPrimary" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+
+

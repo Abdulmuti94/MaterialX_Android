@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.material.components"
+    tools:ignore="GoogleAppIndexingWarning">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:name=".data.ThisApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.profile.ProfileRealEstate"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileStudent"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileLocationRating"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCafe"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileNewsLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormMaterialPrefixSuffix"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialNoLabelOutlined"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialNoLabel"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialIcon"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialContactOutlined"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialContactFilled"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialErrorHelperText"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormMaterialBasic"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.tabs.TabsSimpleTopIndicator"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsSimpleProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsSimpleGreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsSimpleLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerBackIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerBack"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerSliderSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerSlider"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerIconSub"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerColorful"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.snackbartoast.SnackbarMaterial"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.slider.SliderFilterFlight"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.menu.MenuDrawerBottomCard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.menu.MenuDrawerBottom"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.progressactivity.ProgressButtonLinear"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressButtonDone"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressButtonPercent"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressButtonSide"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressButton"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerSmallSuccess"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerSmallWarning"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerSmallInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerPin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerWarning"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerWhite"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.banner.BannerBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.backdrop.BackdropSelection"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.backdrop.BackdropTextField"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.backdrop.BackdropSteppers"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.backdrop.BackdropNavigation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.backdrop.BackdropFilter"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.backdrop.BackdropBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.checkradio.CheckboxParentChild"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.checkradio.RadioSwitchBasic"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.checkradio.CheckboxBasic"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationAnimated"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationBadgeBlink"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationBadge"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.FabExpand"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.sidesheet.SideSheetBasic"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetTransform"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionFabView"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionPageBasicDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionInboxDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionPageCardDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionPageBasic"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionSearchBarExpand"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionFab"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionList"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.motion.MotionCard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.chip.ChipAction"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.chip.ChipChoice"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.chip.ChipFilter"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.chip.ChipInput"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.chip.ChipGroup"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardScrolling"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardDivider"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardExpand"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardBasicOutlined"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.FabAnimation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.ButtonWithIcon"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.ButtonOutlined"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.ButtonTextLabel"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.ButtonHighEmphasis"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.button.ButtonMaterial"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetAnimation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetExpand"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetPlayer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetMenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetFilter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.slider.SliderRange"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardCheckable"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.FabExtend"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarBottomScroll"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarBottomFab"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarBottomBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.ButtonToggleBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleBookReview"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardTravelPackage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardCoursesProgress"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginBigImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationShifting"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.ButtonBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chip.ChipBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.expansionpanel.ExpansionPanelBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerTimeDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.slider.SliderLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.slider.SliderDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.snackbartoast.SnackbarToastBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperText"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.FabMiddle"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.ButtonInUtilities"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardTimeline"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogFullscreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogCustom"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.expansionpanel.ExpansionPanelTicket"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.expansionpanel.ExpansionPanelInvoice"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridSingleLine"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridSectioned"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListSectioned"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListExpand"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListDrag"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListSwipe"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListAnimation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerNews"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerMail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerSimpleLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerSimpleDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerNoIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerDateLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerDateDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerTimeLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressPullRefresh"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressOnScroll"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressLinearCenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.slider.SliderColorPicker"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.snackbartoast.SnackbarAndFab"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperVertical"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperProgress"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperWizardLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsTextIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsStore"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarCollapse"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarCollapsePin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormProfileData"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormWithIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsIconLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsIconStack"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperDots"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.stepper.StepperWizardColor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressCircleCenter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressLinearTop"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerColor"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.picker.PickerLocation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuOverflowToolbar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuOverflowList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListMultiSelection"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridTwoLine"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridAlbums"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogCustomInfo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogCustomWarning"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogCustomLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogAddPost"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogCustomDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogAddReview"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chip.ChipTag"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardOverlap"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardWizard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardWizardLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.FabMore"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.button.FabMoreText"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetMap"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetFloating"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomsheet.BottomSheetFull"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.toolbar.ToolbarDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormTextArea"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsScroll"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignUp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.gridlist.GridCaller"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.card.CardWizardOverlap"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfilePolygon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfilePurple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileRed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileBlueAppbar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileImageAppbar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileDrawerImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileGallery"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileGalleryTwo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileDrawerSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemArchived"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemSearch"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemInternetIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemInternetImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemBgCity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemBgCactus"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.noitem.NoItemTabs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchToolbarLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchToolbarDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchPrimary"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchStore"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchCity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchPrimaryBg"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchHistoryCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCategoryList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.tabs.TabsRound"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCategoryCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCategoryImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCheckoutCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingProductGrid"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingProductDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingSubCategoryTabs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingProductAdvDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderImageHeader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderImageHeaderAuto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderImageCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderImageCardAuto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicAlbumDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicAlbumCircle"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicAlbumSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicSongList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicTabs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicTabsIcon"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicAlbumGrid"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineFeed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelinePath"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineTwitter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineDotCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.settings.SettingProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.settings.SettingSectioned"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.settings.SettingFlat"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.settings.SettingProfileLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationPhone"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationCode"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationHeader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationOrange"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.verification.VerificationBlue"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginSimpleLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginSimpleGreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginImageTeal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginCardLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginCardOverlap"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginSimpleDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.payment.PaymentProfile"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.payment.PaymentForm"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.payment.PaymentCardCollections"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.payment.PaymentCardDetails"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.payment.PaymentSuccessDialog"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressDotsBounce"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressDotsFade"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.progressactivity.ProgressDotsGrow"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileFabMenu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCardList"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationPrimary"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationMapBlue"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardGridFab"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardStatistics"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicGenre"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicGenreImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerMusicGenreLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardPayBill"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardFlight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleMedium"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleMediumDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleBigHeader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleStepper"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleFood"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.article.ArticleFoodReview"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCartSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCartCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCartCardDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCheckoutStep"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCheckoutTimeline"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingCheckoutOnePage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogGDPRBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogTermOfServices"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogHeader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutDialogMainAction"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutCompany"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutCompanyImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutCompanyCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutApp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutAppSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.about.AboutAppSimpleBlue"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerVideoBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.player.PlayerVideoSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchFilterHotel"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchFilterProduct"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchFilterProperty"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardFinance"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardCryptocurrency"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardWallet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardWalletGreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationLightSimple"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCardOverlap"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCardHeader"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCardHeaderImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileSkills"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileRating"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileFreelancer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileFormal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormAddress"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormCheckout"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupImageOutline"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormEcommerce"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupImageCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupCardStack"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormSignupDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.snackbartoast.SnackbarCustom"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.snackbartoast.ToastCustom"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chat.ChatWhatsapp"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chat.ChatBBM"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chat.ChatFacebook"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.chat.ChatTelegram"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shopping.ShoppingTrackingOrder"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListNewsLight"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListNewsLightHorizontal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListNewsCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.list.ListNewsImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchEventType"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchSuggestion"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchSuggestionRed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchOutlet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.search.SearchOutletYellow"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileWallet"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardDana"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileTab"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfilePink"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileWhite"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardTravel"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dashboard.DashboardNews"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderSnapBasic"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderSnapCard"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderSnapFull"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.sliderimage.SliderSnapNews"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormInputOutlined"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".activity.form.FormAddProject"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.form.FormAddProjectBlue"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerWhite"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerWhiteProgress"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerAgri"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerFilter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.menu.MenuDrawerAdminDark"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogMenuPayment"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogAchievement"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.dialog.DialogContactUs"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationArticle"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationShop"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationSmall"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.bottomnavigation.BottomNavigationMain"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.profile.ProfileCircleImage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineExplore"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineImageMix"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.timeline.TimelineImageFit"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!-- Add Google Map Library -->
+        <uses-library android:name="com.google.android.maps" />
+        <!-- Google API Key -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".room.ActivityFavorites"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fcm.ActivityNotifications"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fcm.ActivityDialogNotification"
+            android:exported="false"
+            android:theme="@style/AppTheme.Dialog.NoActionBar" />
+        <activity
+            android:name=".activity.ActivityWebView"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainMenu"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

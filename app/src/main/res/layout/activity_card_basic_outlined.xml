@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.Material">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/spacing_medium">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:layout_marginVertical="@dimen/spacing_middle"
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/grey_10"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_large"
+                        android:text="Quisque Sapien Lorem"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_large"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:layout_marginBottom="@dimen/spacing_large"
+                        android:text="@string/middle_lorem_ipsum"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_60" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/Button.Accent.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="SHARE" />
+
+                        <Button
+                            style="@style/Button.Accent.Borderless"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="EXPLORE" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_large"
+                android:layout_marginVertical="@dimen/spacing_middle"
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/grey_10"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/image_4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_margin="@dimen/spacing_large"
+                            android:text="Aliquet Et Ante"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="@android:color/white" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:tint="@color/grey_40"
+                            app:srcCompat="@drawable/ic_favorites" />
+
+                        <ImageButton
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:tint="@color/grey_40"
+                            app:srcCompat="@drawable/ic_bookmark" />
+
+                        <ImageButton
+                            android:layout_width="?attr/actionBarSize"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:tint="@color/grey_40"
+                            app:srcCompat="@drawable/ic_share" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_large"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/grey_10"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <ImageView
+                                android:id="@+id/image3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/image_8" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="@dimen/spacing_large"
+                                android:text="Aliquet Et Ante"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textColor="@android:color/white" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_favorites" />
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_bookmark" />
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_share" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_large"
+                    android:layout_marginVertical="@dimen/spacing_middle"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="6dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/grey_10"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/image_9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_margin="@dimen/spacing_large"
+                                android:text="Aliquet Et Ante"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textColor="@android:color/white" />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_favorites" />
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_bookmark" />
+
+                            <ImageButton
+                                android:layout_width="?attr/actionBarSize"
+                                android:layout_height="?attr/actionBarSize"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:tint="@color/grey_40"
+                                app:srcCompat="@drawable/ic_share" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

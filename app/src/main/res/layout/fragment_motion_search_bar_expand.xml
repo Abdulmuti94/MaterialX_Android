@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_5"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_middle"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_middle"
+        android:layout_marginBottom="@dimen/spacing_middle"
+        android:clipToPadding="false"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/lyt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/spacing_medium"
+                android:layout_height="0dp" />
+
+            <ImageButton
+                android:id="@+id/bt_search"
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/grey_40"
+                app:srcCompat="@drawable/ic_search" />
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Search"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_40" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/bt_mic"
+                android:layout_width="@dimen/spacing_xxlarge"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/grey_40"
+                app:srcCompat="@drawable/ic_mic" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Please click Search Bar above"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/grey_40" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

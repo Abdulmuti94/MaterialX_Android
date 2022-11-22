@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100_"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="end">
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_100_"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_marginLeft="@dimen/spacing_medium"
+                    android:layout_marginRight="@dimen/spacing_medium"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:title="@string/app_name"
+                    app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:titleTextColor="@android:color/white" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="@dimen/spacing_middle"
+                android:paddingTop="?attr/actionBarSize"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="@dimen/spacing_middle"
+                android:paddingTop="?attr/actionBarSize" />
+
+        </RelativeLayout>
+
+        <!--navigation drawer menu-->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/grey_95"
+            android:fitsSystemWindows="false"
+            app:headerLayout="@layout/include_drawer_header_main_menu"
+            app:itemIconTint="@color/grey_40"
+            app:itemTextColor="@color/grey_10"
+            app:menu="@menu/menu_activity_main_drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <LinearLayout
+        android:id="@+id/ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+</LinearLayout>

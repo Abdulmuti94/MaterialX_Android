@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_10"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/Toolbar.Light" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Please click button below"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/grey_40" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_xlarge"
+            android:clickable="true"
+            app:backgroundTint="@color/red_800"
+            app:fabSize="normal"
+            app:layout_anchor="@id/content"
+            app:layout_anchorGravity="bottom|end"
+            app:rippleColor="@android:color/white"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="@android:color/white" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/contact_card"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/spacing_xlarge"
+        android:visibility="gone"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/spacing_large"
+            android:paddingVertical="@dimen/spacing_large">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onViewItemClicked"
+                android:padding="16dp"
+                android:text="Sandra"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onViewItemClicked"
+                android:padding="16dp"
+                android:text="Charlie"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onViewItemClicked"
+                android:padding="16dp"
+                android:text="Johnson"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onViewItemClicked"
+                android:padding="16dp"
+                android:text="Trevor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:onClick="onViewItemClicked"
+                android:padding="16dp"
+                android:text="Compose"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_60" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
+
+
+
+

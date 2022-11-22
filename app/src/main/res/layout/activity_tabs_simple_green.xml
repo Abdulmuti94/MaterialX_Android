@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingHorizontal="@dimen/spacing_large"
+            app:tabBackground="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabIndicator="@drawable/shape_rounded_green"
+            app:tabIndicatorColor="@color/light_green_500"
+            app:tabIndicatorGravity="center"
+            app:tabIndicatorHeight="@dimen/spacing_xlarge"
+            app:tabMinWidth="100dp"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:tabTextColor="@color/grey_60">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="All" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Trending" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_arrival"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="New" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Featured" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/spacing_medium"
+        android:paddingBottom="@dimen/spacing_large"
+        android:scrollbars="vertical"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

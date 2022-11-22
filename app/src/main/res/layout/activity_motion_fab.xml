@@ -1,0 +1,58 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/teal_600"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Please click button below"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/grey_40" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/spacing_xxlarge"
+        android:clickable="true"
+        app:backgroundTint="@color/orange_500"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_launch"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

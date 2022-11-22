@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_600"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_middle"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="TASK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_dns_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Task"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_flip_camera_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On Progress"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_topic_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_archive_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Archive"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_middle"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="ACCOUNT"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_person_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Profile"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_error_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Issue"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_settings_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setting"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/spacing_middle"
+                android:paddingLeft="@dimen/spacing_middle"
+                android:paddingRight="@dimen/spacing_middle"
+                android:text="ADVANCE"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/grey_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_outline_folder"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permission"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_schema_outline"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="API Key"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:onClick="onMenuClick"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mlarge"
+                    android:layout_height="@dimen/spacing_mlarge"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:srcCompat="@drawable/ic_insert_link"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Webhook"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationX="200dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="false">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <!--toolbar and header  -->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/white"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/Toolbar.Light"
+                    app:titleTextColor="@color/blue_700" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!-- dummy content list of new -->
+            <include layout="@layout/include_drawer_content" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

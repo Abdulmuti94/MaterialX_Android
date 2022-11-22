@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.Material">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_medium">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_xxxlarge"
+                android:background="@android:color/transparent"
+                android:hint="Search Info..."
+                android:minWidth="150dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/grey_80" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingVertical="@dimen/spacing_medium"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

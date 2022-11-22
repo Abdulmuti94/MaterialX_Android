@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/sheet_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:gravity="center"
+            android:text="Filter"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_40" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginVertical="@dimen/spacing_large"
+            android:text="Stops"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            app:fontFamily="sans-serif-medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="Nonstop"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="1 Stop"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="2 Stop"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@color/grey_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginVertical="@dimen/spacing_large"
+            android:text="Duration"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:text="0h 35m - 28h 00m"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/grey_40" />
+
+        <com.material.components.widget.RangeSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:thumb="@drawable/seek_thumb_primary"
+            app:bar_color="@color/colorAccent"
+            app:left_thumb_color="@color/colorPrimary"
+            app:max_start_value="100"
+            app:max_value="80"
+            app:min_start_value="0"
+            app:min_value="20"
+            app:corner_radius="2"
+            app:right_thumb_color="@color/colorPrimary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@color/grey_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginVertical="@dimen/spacing_large"
+            android:text="Cabin"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            app:fontFamily="sans-serif-medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="Economy"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="Business"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/spacing_medium">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/spacing_middle"
+                    android:text="First Class"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_80" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:buttonTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:background="@color/grey_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:layout_marginVertical="@dimen/spacing_large"
+            android:text="Max Price"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_mlarge"
+            android:text="$8.888"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/grey_40" />
+
+        <com.material.components.widget.RangeSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            android:thumb="@drawable/seek_thumb_primary"
+            app:bar_color="@color/colorAccent"
+            app:left_thumb_color="@color/colorPrimary"
+            app:max_start_value="100"
+            app:max_value="80"
+            app:min_start_value="0"
+            app:min_value="20"
+            app:corner_radius="2"
+            app:right_thumb_color="@color/colorPrimary" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_mlarge" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

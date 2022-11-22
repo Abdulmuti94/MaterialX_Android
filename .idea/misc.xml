@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/drawable/ic_error_outline.xml" value="0.3185" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/drawable/ic_power_settings.xml" value="0.3185" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_about_app_simple_blue.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_bottom_sheet_full.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_bottom_sheet_list.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_bottom_sheet_menu.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_button_toggle_basic.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_dashboard_dana.xml" value="0.24322916666666666" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_dashboard_grid_fab.xml" value="0.24322916666666666" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_add_project.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_basic.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_contact_filled.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_contact_outlined.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_error_helper_text.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_icon.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_no_label.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_no_label_outlined.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_form_material_prefix_suffix.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_menu_drawer_admin.xml" value="0.3333333333333333" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_menu_drawer_admin_dark.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_menu_drawer_mail.xml" value="0.3333333333333333" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_menu_drawer_news.xml" value="0.3333333333333333" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_menu_drawer_no_icon.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_snackbar_and_fab.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_snackbar_custom.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_snackbar_material.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_tabs_icon.xml" value="0.36302083333333335" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_tabs_icon_light.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_tabs_icon_stack.xml" value="0.22" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_toast_custom.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_verification_code.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_verification_header.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_verification_image.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_verification_orange.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/activity_verification_phone.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/item_snap_basic.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/item_snap_card.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/item_suggestion.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/item_swipe.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/item_swipe_undo.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/sheet_basic.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/sheet_filter.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/sheet_list.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/sheet_map.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/sheet_menu.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/simple_spinner_dropdown_item.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/simple_spinner_item.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/snackbar_icon_text.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/snackbar_toast_floating.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/snackbar_toast_floating_dark.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/snackbar_toast_floating_image.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/toast_custom.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/toast_icon_text.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/layout/toolbar.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/menu/menu_navigation_drawer_mail.xml" value="0.35052083333333334" />
+        <entry key="..\:/_Projects/Templates/Mobile/Android/materialx_mainfile_2.8.1/MaterialX/app/src/main/res/menu/menu_navigation_drawer_mail_no_icon.xml" value="0.35052083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_purple_A700"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/backdrop_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/spacing_large">
+
+        <LinearLayout
+            android:id="@+id/lyt_unread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_small"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_small">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_marginHorizontal="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_check_circle"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:text="Select an app"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/action_menu"
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginHorizontal="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_menu"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/spacing_smlarge"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                android:background="@color/grey_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_inbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_small"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_small">
+
+            <ImageView
+                android:layout_width="@dimen/spacing_mxlarge"
+                android:layout_height="@dimen/spacing_mxlarge"
+                android:layout_marginHorizontal="@dimen/spacing_middle"
+                app:srcCompat="@drawable/ic_check_circle"
+                app:tint="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:text="Configure analytics"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/spacing_smlarge"
+                android:layout_marginHorizontal="27dp"
+                android:layout_marginVertical="@dimen/spacing_medium"
+                android:background="@color/grey_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt_bookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_small"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_small">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_middle">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:padding="@dimen/spacing_xsmall"
+                    app:srcCompat="@drawable/shape_circle"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/deep_purple_A700" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:text="Select ad format"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_smlarge"
+            android:layout_marginVertical="@dimen/spacing_medium" />
+
+        <LinearLayout
+            android:id="@+id/lyt_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_small"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onMenuClick"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/spacing_small">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_middle">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_mxlarge"
+                    android:layout_height="@dimen/spacing_mxlarge"
+                    android:padding="@dimen/spacing_xsmall"
+                    app:srcCompat="@drawable/shape_circle"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/deep_purple_A700" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/spacing_mlarge"
+                android:text="Placement"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:visibility="visible"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="8dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:scrollingCache="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_mxlarge"
+                android:paddingTop="@dimen/spacing_medium"
+                android:paddingRight="@dimen/spacing_mxlarge"
+                android:paddingBottom="@dimen/spacing_xxlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:text="Project name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@color/grey_3"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="Ex. Agency Web"
+                        android:textColorHint="@color/grey_40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:text="Additional info"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@color/grey_3"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="Platform, type, etc."
+                        android:textColorHint="@color/grey_40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:text="Project Description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@color/grey_3"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:gravity="start"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:text="@string/short_lorem_ipsum"
+                        android:textColor="@color/grey_80" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:text="Attachment"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_xmlarge"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:padding="@dimen/spacing_xmedium"
+                        app:srcCompat="@drawable/ic_insert_drive"
+                        app:tint="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:editable="false"
+                        android:text="Project_file.zip"
+                        android:textColor="@color/grey_60" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_xmlarge"
+                        android:layout_height="@dimen/spacing_xmlarge"
+                        android:padding="@dimen/spacing_xmedium"
+                        app:srcCompat="@drawable/ic_close"
+                        app:tint="@color/grey_40" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:text="Tags"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_60" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:background="@color/grey_3"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:gravity="start"
+                        android:hint="Input tag separated with comma"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:textColorHint="@color/grey_40" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
